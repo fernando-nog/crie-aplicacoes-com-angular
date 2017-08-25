@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PropertyBindingComponent implements OnInit {
 
+  verParagrafo: Boolean = true;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  mostrar(): Boolean {
+    this.verParagrafo = !this.verParagrafo;
+    return this.verParagrafo;
   }
 
 }
