@@ -8,7 +8,7 @@ import { AlertaService } from './alerta.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Livro Angular 4';
   foto: string = 'favicon.ico';
 
   constructor(private service: AlertaService){
