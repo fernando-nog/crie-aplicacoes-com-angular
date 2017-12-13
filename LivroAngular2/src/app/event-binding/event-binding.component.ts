@@ -9,7 +9,17 @@ export class EventBindingComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  meuClick(): void {
+    console.log('evento meuClick do botão');
   }
 
+  digitou($event): void {
+    console.log($event);
+  }
+
+  digitouVarTemplate(valor): void {
+    console.log(valor);
+  }
 }

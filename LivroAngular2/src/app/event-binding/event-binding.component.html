@@ -1,3 +1,5 @@
-<p>
-  event-binding works!
-</p>
+<h2>event binding</h2>
+<button (click)="meuClick()">Click aqui</button>
+<input (keyup)="digitou($event)">
+
+<input #valorInput (keyup)="digitouVarTemplate(valorInput.value)">
