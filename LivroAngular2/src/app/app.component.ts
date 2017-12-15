@@ -11,9 +11,9 @@ export class AppComponent {
   title = 'Livro Angular 4';
   foto: string = 'favicon.ico';
 
-  constructor(private service: AlertaService){
+  desenvolvimento: string [] = ['Angular 2', 'JavaScript', 'TypeScript', 'HTML', 'CSS'];
 
-  }
+  constructor(private service: AlertaService){ }
 
   enviarMsg(): void {
     this.service.msgAlerta();
