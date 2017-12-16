@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-input-output',
@@ -8,8 +8,13 @@ import { Component, OnInit, Input } from '@angular/core';
 export class InputOutputComponent implements OnInit {
 
   @Input() menu: string;
+  @Output() nomeClidado = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() { }
+
+  enviarNome(value){
+    this.nomeClidado.emit(value);
+  }
 }
