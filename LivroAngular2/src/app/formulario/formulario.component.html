@@ -1,19 +1,24 @@
 <h2>Formulário</h2>
-<form>
+
+<form #cadastro="ngForm">
+  
   <div>
     <label for="nome">Nome</label>
-    <input type="text" id="nome" name="nome">
+    <input type="text" id="nome" [(ngModel)]="contato.nome" #nome="ngModel" name="nome" required>
   </div>
+  
   <br>
   <div>
     <label for="telefone">Telefone</label>
-    <input type="text" id="telefone" name="telefone">
+    <input type="text" id="telefone" [(ngModel)]="contato.telefone" #telefone="ngModel" name="telefone" required>
   </div>
+
   <br>
   <div>
-    <label for="email">E-mail</label>
-    <input type="text" id="email" name="email">
+    <label for="email">Email</label>
+    <input type="text" id="email" [(ngModel)]="contato.email" #email="ngModel" name="email">
   </div>
+  
   <br>
   <button type="submit">Enviar</button>
 </form>
